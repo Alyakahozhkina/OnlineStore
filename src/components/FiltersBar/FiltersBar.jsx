@@ -6,12 +6,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useDebounce } from '../../hooks/useDebounce';
 import { setDirection, setFilterName } from '../../store/reducers/appReducer';
 import { SortingIconButton } from '../ComponentsServiceParts/SortingIconButton/SortingIconButton';
-import { selectDirectionSort } from '../../store/selectors';
+import { selectDirectionSort, selectFilter } from '../../store/selectors';
 import config from './filtersBar.config';
 import './filtersBar.scss';
 
 const {
-  emptyString,
   debounceDelay,
   ascDirection,
   descDirection,
@@ -20,8 +19,10 @@ const {
 export const FiltersBar = memo(() => {
   const dispatch = useDispatch();
   const { t } = useTranslation();
-  const [filter, setFilter] = useState(emptyString);
   const directionSort = useSelector(selectDirectionSort);
+  const filterStore = useSelector(selectFilter);
+  const [filter, setFilter] = useState(filterStore);
+
 
   const dispatchFilter = useCallback((filter) => dispatch(setFilterName(filter)), [dispatch]);
 

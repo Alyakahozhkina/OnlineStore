@@ -11,7 +11,7 @@ import { removeAuthUser } from '../../../thunks/authThunks';
 import { CartList } from '../../CartList/CartList';
 import { getProductsList } from '../../../thunks/productsThunks';
 import { ThemeSwitcher } from '../../ComponentsServiceParts/ThemeSwitcher/ThemeSwitcher';
-import { SelectAutoWidth } from '../../ComponentsServiceParts/LanguageSelect/LanguageSelect';
+import { LanguageSelect } from '../../ComponentsServiceParts/LanguageSelect/LanguageSelect';
 import logo from '../../../assets/img/common/logo.png';
 import './header.scss';
 
@@ -53,7 +53,7 @@ export const Header = memo(() => {
         <Grid item xs={5}>
           <Box className="header__interactions interactions">
             <ThemeSwitcher />
-            <SelectAutoWidth />
+            <LanguageSelect />
             { !roleAdmin && email && (
               <Box className="interactions__cart cart">
                 <IconButton className="cart__button" onClick={handleOpenCartList}><ShoppingCart /></IconButton>

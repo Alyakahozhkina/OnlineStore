@@ -6,7 +6,7 @@ import { selectAuthUser, selectLanguage } from '../../../store/selectors';
 import { updateAuthUser } from '../../../thunks/authThunks';
 import { setLanguage } from '../../../store/reducers/appReducer';
 
-export const SelectAutoWidth = memo(() => {
+export const LanguageSelect = memo(() => {
   const dispatch = useDispatch();
   const { t } = useTranslation();
   const authUser = useSelector(selectAuthUser);
@@ -32,19 +32,18 @@ export const SelectAutoWidth = memo(() => {
   }, [dispatch, language, languageSelect]);
 
   return (
-    <div>
-      <FormControl>
-        <Select
-          labelId="demo-simple-select-autowidth-label"
-          id="demo-simple-select-autowidth"
-          value={languageSelect}
-          onChange={changeLanguage}
-          autoWidth
-        >
-          <MenuItem value="ua">{t('uaLang')}</MenuItem>
-          <MenuItem value="en">{t('enLang')}</MenuItem>
-        </Select>
-      </FormControl>
-    </div>
+    <FormControl className="language-select">
+      <Select
+        labelId="demo-simple-select-autowidth-label"
+        id="demo-simple-select-autowidth"
+        value={languageSelect}
+        onChange={changeLanguage}
+        className="language-select__select"
+        autoWidth
+      >
+        <MenuItem value="ua">{t('uaLang')}</MenuItem>
+        <MenuItem value="en">{t('enLang')}</MenuItem>
+      </Select>
+    </FormControl>
   );
 });
