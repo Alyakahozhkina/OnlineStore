@@ -1,0 +1,39 @@
+body {
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgb(239, 239, 239);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(113, 112, 112);
+    border-radius: 20px;
+    border: 3px solid rgb(239, 239, 239);
+  }
+}
+
+.for__page {
+  min-height: 100%;
+  background-color: #f0e3ea;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.5s ease;
+
+  .page {
+    flex: 1 1 auto;
+  }
+
+  .container {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+}
+
+.dark {
+  &.for__page {
+    background-color: #342e2e;
+    transition: background-color 0.5s ease;
+  }
+}

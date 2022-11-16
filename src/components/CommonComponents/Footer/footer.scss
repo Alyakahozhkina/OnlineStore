@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  width: 100%;
+  background-color: #b676ad;
+
+  &__logo {
+    max-width: 70px;
+  }
+
+  &__box-icon,
+  &__text-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    font-family: "Open Sans";
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  &__icon {
+    svg {
+      font-size: 26px;
+      color: #fff;
+    }
+  }
+}

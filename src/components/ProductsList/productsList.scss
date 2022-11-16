@@ -1,0 +1,45 @@
+.products-list {
+  padding-top: 20px;
+
+  &__inner-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__add-button-inner {
+    display: inline-block;
+    position: fixed;
+    right: 50px;
+    bottom: 115px;
+    text-align: center;
+    padding: 20px 0 30px;
+
+    &.fixed {
+      position: fixed;
+      top: 20px;
+    }
+
+    .products-list__add-button {
+      svg {
+        font-size: 35px;
+      }
+    }
+  }
+  .products-list__no-products {
+    display: block;
+    padding: 150px 0;
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Open Sans";
+    font-size: 46px;
+    color: #2A1926FF;
+  }
+}
+
+
+.dark {
+  .products-list__no-products {
+    color: white;
+  }
+}

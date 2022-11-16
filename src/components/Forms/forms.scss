@@ -1,0 +1,160 @@
+.login-form,
+.register-form,
+.products-form {
+  .login-form__form,
+  .register-form__form {
+    width: 400px;
+  }
+
+  .forms {
+    margin-top: 30px;
+
+    &__input,
+    &__select,
+    &__textarea {
+      width: 100%;
+      margin: 0;
+
+      label {
+        &.Mui-focused {
+          color: #912a91;
+        }
+      }
+
+      .css-md26zr-MuiInputBase-root-MuiOutlinedInput-root {
+        &.Mui-focused {
+          color: #912a91;
+
+          fieldset {
+            border-color: #912a91;
+          }
+        }
+      }
+    }
+
+    &__input,
+    &__select {
+      min-height: 86px;
+    }
+
+    &__textarea {
+      min-height: 185px;
+    }
+
+    &__select {
+      text-align: left;
+    }
+
+    &__password {
+      position: relative;
+    }
+
+    &__visible-button {
+      position: absolute;
+      bottom: 37px;
+      right: 10px;
+    }
+
+    &__btn-success {
+      background-color: #a339a3;
+
+      &:hover {
+        background-color: #912a91;
+      }
+    }
+
+    &__btn-cancel {
+      color: #912a91;
+      border-color: #912a91;
+
+      &:hover {
+        border-color: #912a91;
+      }
+    }
+
+    &__alert {
+      background-color: #F4D8F6FF;
+      margin-bottom: 20px;
+    }
+  }
+
+  .buttons-box {
+    justify-content: center;
+  }
+}
+
+.products-form {
+  padding-top: 20px;
+
+  .products-form__form {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+
+  .products-form__inner {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 50px;
+  }
+
+  .products-form__title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.dark {
+
+  &.login-register-modal,
+  .products-form__inner {
+    background-color: #c0adc0;
+  }
+
+  .forms {
+    &__btn-success {
+      background-color: #5e155e;
+
+      &:hover {
+        background-color: #5e155e;
+      }
+    }
+
+    &__btn-cancel {
+      color: #5e155e;
+      border-color: #5e155e;
+      background-color: #a190a1;
+
+      &:hover {
+        border-color: #5e155e;
+        background-color: #bbaebe;
+      }
+    }
+
+    &__input,
+    &__select,
+    &__textarea {
+      label {
+        &.Mui-focused {
+          color: #5e155e;
+        }
+      }
+
+      .css-md26zr-MuiInputBase-root-MuiOutlinedInput-root {
+        &.Mui-focused {
+          color: #5e155e;
+
+          fieldset {
+            border-color: #5e155e;
+          }
+        }
+
+        &:hover {
+          fieldset {
+            border-color: #5e155e;
+          }
+        }
+      }
+    }
+  }
+}

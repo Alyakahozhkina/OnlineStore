@@ -1,0 +1,46 @@
+.cart-list {
+  .product {
+    display: flex;
+    margin: 20px 0;
+
+    &__image-box {
+      max-width: 100px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    &__image {
+      max-height: 150px;
+    }
+
+    &__column {
+      text-align: center;
+    }
+
+    &__price {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    &__name {
+      margin-bottom: 20px;
+    }
+
+    svg {
+      margin-right: 2px;
+      border: 1px solid #5b5b5b;
+      border-radius: 50px;
+    }
+  }
+}
+
+.dark {
+  .product__name, .product__price {
+    color: #fff;
+  }
+
+  .product svg,
+  .css-9mgopn-MuiDivider-root {
+    border: 1px solid rgb(176, 164, 174);
+  }
+}

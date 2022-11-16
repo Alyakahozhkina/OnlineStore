@@ -1,0 +1,33 @@
+.error-page {
+  padding-top: 80px;
+  margin: 0 auto;
+  text-align: center;
+
+  &__text {
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 28px;
+    color: #fff;
+  }
+
+  &__image-box {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .home-button {
+    display: inline-flex;
+    color: #fd3c84;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+    background: #ffa48d;
+    border: 1px solid transparent;
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+    &:hover {
+      background-color: #f8caca;
+      border: 1px solid #fd3c84;
+    }
+  }
+}

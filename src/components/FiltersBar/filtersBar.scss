@@ -1,0 +1,102 @@
+.filters-bar {
+  .container {
+    justify-content: space-between;
+  }
+
+  .filters-bar__sorting {
+    display: flex;
+    justify-content: space-between;
+    max-width: 175px;
+
+    .css-1d3f8j8-MuiButtonBase-root-MuiButton-root {
+      border: 1px solid transparent;
+      padding: 5px 15px;
+      color: #9c27b0;
+    }
+  }
+
+  &__filter-product {
+    display: flex;
+    justify-content: flex-end;
+
+    .filter-product {
+      max-width: 450px;
+      width: 100%;
+
+      .MuiFormLabel-root,
+      .MuiInputBase-root {
+        font-size: 1.2rem;
+      }
+
+      .MuiInputBase-root {
+        max-width: 450px;
+        width: 100%;
+        color: #5f1a5f;
+      }
+
+      .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused,
+      .css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root {
+        color: #5f1a5f;
+      }
+
+      .css-1ptx2yq-MuiInputBase-root-MuiInput-root {
+        &:after {
+          border-bottom: 2px solid #5f1a5f;
+        }
+
+        &:before {
+          border-bottom: 1px solid #5F1A5F6B;
+        }
+
+        &:hover {
+          &:before {
+            border-bottom: 2px solid #5F1A5FDD;
+          }
+        }
+      }
+    }
+  }
+
+  .filters-bar__arrow {
+    color: #5f1a5f;
+  }
+}
+
+.dark {
+  .filters-bar {
+    &__sorting {
+      .css-1d3f8j8-MuiButtonBase-root-MuiButton-root,
+      .css-wnpvqa-MuiButtonBase-root-MuiButton-root {
+        color: #e655ff;
+      }
+    }
+
+    .filters-bar__arrow,
+    .MuiInputBase-root {
+      color: #e655ff;
+    }
+
+    &__filter-product {
+      .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused,
+      .css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root {
+        color: #e655ff;
+      }
+
+      .css-1ptx2yq-MuiInputBase-root-MuiInput-root {
+        &:after {
+          border-bottom: 2px solid #e655ff;
+        }
+
+        &:before {
+          border-bottom: 1px solid #E655FF6C;
+        }
+
+        &:hover {
+          &:before {
+            border-bottom: 2px solid #E655FFDD;
+          }
+        }
+      }
+    }
+  }
+}
