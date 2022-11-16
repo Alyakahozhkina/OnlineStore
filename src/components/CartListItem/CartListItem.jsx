@@ -7,6 +7,7 @@ import { updateAuthUser } from '../../thunks/authThunks';
 import { useDebounce } from '../../hooks/useDebounce';
 import { productDefaultProps } from '../../propsProperties/defaultProps/products';
 import { productPropTypes } from '../../propsProperties/propTypes/products';
+import { closeCartModal } from '../../store/reducers/appReducer';
 import './cartListItem.scss';
 
 export const CartListItem = memo(({ product }) => {
@@ -62,6 +63,9 @@ export const CartListItem = memo(({ product }) => {
       orderCart: authUser.orderCart.filter((product) => product.id !== productId),
     };
     dispatch(updateAuthUser({ newAuthUser }));
+    if (!newAuthUser.orderCart.length) {
+      dispatch(closeCartModal());
+    }
   }, [authUser, dispatch]);
 
   const handleRemoveButtonClick = useCallback(() => {

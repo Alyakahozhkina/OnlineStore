@@ -56,7 +56,7 @@ export const Header = memo(() => {
             <LanguageSelect />
             { !roleAdmin && email && (
               <Box className="interactions__cart cart">
-                <IconButton className="cart__button" onClick={handleOpenCartList}><ShoppingCart /></IconButton>
+                <IconButton disabled={!numberOrders} className="cart__button" onClick={handleOpenCartList}><ShoppingCart /></IconButton>
                 <>
                   { numberOrders
                     ? (<Box component="div" className="cart__orders">{ numberOrders }</Box>)

@@ -21,7 +21,9 @@
         }
       }
 
-      .css-md26zr-MuiInputBase-root-MuiOutlinedInput-root {
+      .css-md26zr-MuiInputBase-root-MuiOutlinedInput-root,
+      .css-8ewcdo-MuiInputBase-root-MuiOutlinedInput-root,
+      .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
         &.Mui-focused {
           color: #912a91;
 
@@ -39,6 +41,22 @@
 
     &__textarea {
       min-height: 185px;
+      textarea {
+        &::-webkit-scrollbar {
+          width: 12px;
+        }
+
+        &::-webkit-scrollbar-track {
+          background: #D9D9D9FF;
+          border-radius: 20px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: rgb(113, 112, 112);
+          border-radius: 20px;
+          border: 3px solid #D9D9D9FF;
+        }
+      }
     }
 
     &__select {
@@ -140,7 +158,9 @@
         }
       }
 
-      .css-md26zr-MuiInputBase-root-MuiOutlinedInput-root {
+      .css-md26zr-MuiInputBase-root-MuiOutlinedInput-root,
+      .css-8ewcdo-MuiInputBase-root-MuiOutlinedInput-root,
+      .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
         &.Mui-focused {
           color: #5e155e;
 
